@@ -52,8 +52,10 @@ Dataset yang digunakan dalam proyek ini adalah California Housing Dataset yang b
 
 Dataset ini bisa diakses melalui:
 1. Library scikit-learn: `from sklearn.datasets import fetch_california_housing`
-2. Repositori UCI Machine Learning: [California Housing Dataset](https://archive.ics.uci.edu/ml/datasets/housing)
+2. StatLib Repository (sumber asli): [California Housing Dataset](https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html)
 3. Kaggle: [California Housing Prices](https://www.kaggle.com/datasets/camnugent/california-housing-prices)
+
+> **Catatan Penting:** Dalam proyek ini, saya menggunakan dataset California Housing dari scikit-learn yang memiliki 8 fitur numerik (MedInc, HouseAge, AveRooms, AveBedrms, Population, AveOccup, Latitude, Longitude). Dataset dari Kaggle (camnugent/california-housing-prices) mengandung fitur tambahan `ocean_proximity` yang merupakan fitur kategorikal yang mengindikasikan kedekatan properti dengan lautan. Versi scikit-learn telah diproses sebelumnya dan tidak menyertakan fitur kategorikal ini. Kedua dataset berasal dari sumber yang sama (Sensus California tahun 1990) namun telah mengalami pra-pemrosesan yang berbeda.
 
 Dataset ini terdiri dari 20,640 sampel dengan 8 fitur dan 1 target, yang mencakup berbagai aspek dari blok perumahan di California.
 
@@ -360,3 +362,5 @@ Untuk informasi lebih detail tentang penggunaan model, silakan lihat [README.md 
 [2] C. Fan, Z. Cui, and X. Zhong, "House Prices Prediction with Machine Learning Algorithms," in Proceedings of the 2018 10th International Conference on Machine Learning and Computing, pp. 6-10, 2018.
 
 [3] R. K. Pace and R. Barry, "Sparse spatial autoregressions," Statistics & Probability Letters, vol. 33, no. 3, pp. 291-297, 1997.
+
+[4] R. K. Pace and R. Barry, "California Housing Data," StatLib Repository, (https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html), 1997. Dataset yang sama tersedia melalui scikit-learn dengan nama `fetch_california_housing()` dan Kaggle dengan versi yang lebih lengkap termasuk fitur `ocean_proximity`.
