@@ -172,7 +172,7 @@ Setelah evaluasi model awal, Random Forest dipilih untuk tuning karena menunjukk
 - `min_samples_leaf`: [1, 2, 4] - Minimum sampel yang diperlukan dalam leaf node
 - `bootstrap`: [True, False] - Apakah menggunakan bootstrapping
 
-Proses tuning memerlukan waktu sekitar 30 menit dengan cross-validation 5-fold, yang berarti model dilatih dan dievaluasi sebanyak 5 × (3×4×3×3×2) = 1,080 kali untuk menemukan kombinasi parameter terbaik.
+Proses tuning memerlukan waktu lebih dari 5 jam karena keterbatasan hardware, dengan cross-validation 5-fold, yang berarti model dilatih dan dievaluasi sebanyak 5 × (3×4×3×3×2) = 1,080 kali untuk menemukan kombinasi parameter terbaik.
 
 **Parameter optimal hasil tuning**:
 - `bootstrap=True`: Menggunakan bootstrapping untuk meningkatkan diversitas model.
